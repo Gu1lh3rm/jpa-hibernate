@@ -1,6 +1,6 @@
-package model;
+package domain;
 
-import model.common.Common;
+import domain.common.Common;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

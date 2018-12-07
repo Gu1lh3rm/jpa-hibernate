@@ -1,14 +1,13 @@
-package model;
+package domain;
 
-import model.common.Common;
 
-import javax.persistence.Column;
+import domain.common.Common;
+
 import javax.persistence.Entity;
 
 @Entity
-public class Modelo extends Common {
+public class Marca extends Common {
 
-    @Column(length = 20)
     private String descricao;
 
     public String getDescricao() {

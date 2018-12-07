@@ -1,7 +1,7 @@
-package model;
+package domain;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import model.common.Common;
+import domain.common.Common;
 
 import javax.persistence.Entity;
 import java.util.Date;
