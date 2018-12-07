@@ -5,7 +5,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 
-public class MarcaTest{
+public class ClienteTest {
 
 
         public static void main(String[] args) {
@@ -19,12 +19,14 @@ public class MarcaTest{
 
         et.begin();
 
-        Marca  marca = new Marca();
+        Cliente  cliente = new Cliente();
 
-        marca.setDescricao("Ford");
+        cliente.setCpf("39771451565");
+        cliente.setEmail("guilherme@gmail.com");
+        cliente.setFone("3232323232");
+        cliente.setNome("Guilherme");
 
-
-        em.persist(marca);
+        em.persist(cliente);
 
         et.commit();
     }

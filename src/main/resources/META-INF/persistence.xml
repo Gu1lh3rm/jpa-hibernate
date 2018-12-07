@@ -4,7 +4,12 @@
 <persistence-unit name="teste_hibernate_gui" transaction-type="RESOURCE_LOCAL">
     <provider>org.hibernate.ejb.HibernatePersistence</provider>
 
+    <class>model.common.Common</class>
     <class>model.Marca</class>
+    <class>model.Automovel</class>
+    <class>model.Modelo</class>
+    <class>model.Cliente</class>
+    <class>model.Locacao</class>
 
     <properties>
         <property name="hibernate.connection.driver_class" value="org.postgresql.Driver" />
@@ -17,6 +22,8 @@
         <property name="hibernate.id.new_generator_mappings" value="true" />
         <property name="hibernate.show_sql" value="true" />
         <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
+
+
 
         <property name="hibernate.hbm2ddl.auto" value="create-drop" />
         <!--<property name="org.hibernate.hbm2ddl.auto" value="create-drop" />-->
