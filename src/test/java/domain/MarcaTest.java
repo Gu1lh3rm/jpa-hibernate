@@ -1,31 +1,20 @@
 package domain;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.EntityTransaction;
-import javax.persistence.Persistence;
+import repositories.MarcaRepository;
 
 public class MarcaTest{
 
 
-        public static void main(String[] args) {
+    public static void main(String[] args) throws Exception{
 
 
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("teste_hibernate_gui");
-        EntityManager em = emf.createEntityManager();
-
-        EntityTransaction et = em.getTransaction();
-
-
-        et.begin();
+        MarcaRepository marcaRepository = new MarcaRepository();
 
         Marca marca = new Marca();
 
         marca.setDescricao("Ford");
 
+        marcaRepository.save(marca);
 
-        em.persist(marca);
-
-        et.commit();
     }
 }

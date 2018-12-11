@@ -2,17 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="310a2574-c5e8-4bf1-996a-68e91f39cd78" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/domain/common/EntidadeBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repositories/AutomovelRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/services/persistence/ConnectionFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/services/persistence/JpaGeneric.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repositories/ClienteRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repositories/LocacaoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repositories/MarcaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repositories/ModeloRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/common/Common.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/common/Common.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/persistence/ConnectionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/ConnectionFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repositories/persistence/JpaGeneric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repositories/persistence/JpaGeneric.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/domain/AutomovelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/domain/AutomovelTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/domain/Automovel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/domain/Automovel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/domain/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/domain/Cliente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/domain/Locacao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/domain/Locacao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/domain/ClienteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/domain/ClienteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/domain/LocacaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/domain/LocacaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/domain/MarcaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/domain/MarcaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/domain/ModeloTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/domain/ModeloTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/repositories/AutomovelRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repositories/AutomovelRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/services/persistence/ConnectionFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/services/persistence/JpaGeneric.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/domain/AutomovelTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/domain/AutomovelTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/domain/ClienteTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/domain/ClienteTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/domain/LocacaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/domain/LocacaoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/domain/MarcaTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/domain/MarcaTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,13 +43,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="15" />
-          <entry key="java" value="4262" />
+          <entry key="java" value="4506" />
           <entry key="xml" value="218" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4262" />
+          <entry key="JAVA" value="4506" />
           <entry key="PLAIN_TEXT" value="15" />
           <entry key="XML" value="218" />
         </counts>
@@ -49,14 +57,14 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="fxml" value="1" />
-          <entry key="java" value="81" />
+          <entry key="java" value="94" />
           <entry key="tld" value="1" />
           <entry key="xml" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="81" />
+          <entry key="JAVA" value="94" />
           <entry key="XML" value="13" />
         </counts>
       </usages-collector>
@@ -65,69 +73,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/services/persistence/ConnectionFactory.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/repositories/ModeloRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="112" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="112" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#354#355#0" expanded="true" />
-                <element signature="e#383#384#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/services/persistence/JpaGeneric.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="38" lean-forward="true" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/domain/common/EntidadeBase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/domain/Automovel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/domain/common/Common.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/repositories/AutomovelRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+            <state relative-caret-position="75">
+              <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -136,13 +85,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/domain/AutomovelTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/domain/ModeloTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="60">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -195,7 +141,6 @@
         <option value="$PROJECT_DIR$/src/main/java/model/Automovel.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/main/java/domain/Marca.java" />
-        <option value="$PROJECT_DIR$/src/test/java/domain/MarcaTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/domain/Modelo.java" />
         <option value="$PROJECT_DIR$/src/main/java/domain/Cliente.java" />
         <option value="$PROJECT_DIR$/src/main/java/domain/Locacao.java" />
@@ -207,7 +152,16 @@
         <option value="$PROJECT_DIR$/src/main/java/domain/Automovel.java" />
         <option value="$PROJECT_DIR$/src/main/java/services/persistence/JpaGeneric.java" />
         <option value="$PROJECT_DIR$/src/main/java/domain/common/Common.java" />
+        <option value="$PROJECT_DIR$/src/main/java/config/ConnectionFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/repositories/ClienteRepository.java" />
         <option value="$PROJECT_DIR$/src/test/java/domain/AutomovelTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/domain/ClienteTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/repositories/LocacaoRepository.java" />
+        <option value="$PROJECT_DIR$/src/test/java/domain/LocacaoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/repositories/MarcaRepository.java" />
+        <option value="$PROJECT_DIR$/src/test/java/domain/MarcaTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/repositories/ModeloRepository.java" />
+        <option value="$PROJECT_DIR$/src/test/java/domain/ModeloTest.java" />
       </list>
     </option>
   </component>
@@ -283,24 +237,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="comdevhibernatesearch" type="b2602c69:ProjectViewProjectNode" />
-              <item name="comdevhibernatesearch" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="comdevhibernatesearch" type="b2602c69:ProjectViewProjectNode" />
-              <item name="comdevhibernatesearch" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="persistence" type="462c0819:PsiDirectoryNode" />
+              <item name="repositories" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="comdevhibernatesearch" type="b2602c69:ProjectViewProjectNode" />
@@ -349,7 +286,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544554237182" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544555685252" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -359,6 +296,7 @@
       <recent name="model" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="repositories" />
       <recent name="domain" />
       <recent name="model" />
     </key>
@@ -375,7 +313,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.AutomovelTest">
+  <component name="RunManager" selected="Application.ModeloTest">
     <configuration name="AutomovelTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="domain.AutomovelTest" />
       <module name="comdevhibernatesearch" />
@@ -450,10 +388,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AutomovelTest" />
-        <item itemvalue="Application.LocacaoTest" />
-        <item itemvalue="Application.MarcaTest" />
         <item itemvalue="Application.ModeloTest" />
+        <item itemvalue="Application.MarcaTest" />
+        <item itemvalue="Application.LocacaoTest" />
+        <item itemvalue="Application.AutomovelTest" />
         <item itemvalue="Application.ClienteTest" />
       </list>
     </recent_temporary>
@@ -470,12 +408,12 @@
       <updated>1544179061421</updated>
       <workItem from="1544179063077" duration="17821000" />
       <workItem from="1544526104325" duration="44000" />
-      <workItem from="1544545759269" duration="8473000" />
+      <workItem from="1544545759269" duration="9912000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26338000" />
+    <option name="totallyTimeSpent" value="27777000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1922" height="1053" extended-state="6" />
@@ -556,7 +494,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/domain/AutomovelTest.java</url>
-          <line>18</line>
+          <line>11</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
@@ -579,43 +517,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/AbstractBean.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/BasicDAO.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/DAO.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/domain/ModeloTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/domain/LocacaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="20" column="53" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/domain/ClienteTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/domain/MarcaTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="20" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="28" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/domain/Modelo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -650,23 +551,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/domain/Locacao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102">
-          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-          <folding>
-            <element signature="e#766#767#0" expanded="true" />
-            <element signature="e#798#799#0" expanded="true" />
-            <element signature="e#851#852#0" expanded="true" />
-            <element signature="e#893#894#0" expanded="true" />
-            <element signature="e#928#929#0" expanded="true" />
-            <element signature="e#958#959#0" expanded="true" />
-            <element signature="e#1005#1006#0" expanded="true" />
-            <element signature="e#1043#1044#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -685,18 +569,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/services/persistence/ConnectionFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="112" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="112" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#354#355#0" expanded="true" />
-            <element signature="e#383#384#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/domain/Automovel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -704,33 +576,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/AutomovelRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/services/persistence/JpaGeneric.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="38" lean-forward="true" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/domain/common/EntidadeBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -744,13 +589,130 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/domain/AutomovelTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/domain/common/EntidadeBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        <state relative-caret-position="60">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/persistence/JpaGeneric.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/config/ConnectionFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#354#355#0" expanded="true" />
+            <element signature="e#383#384#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/domain/AutomovelTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/ClienteRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="57" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/domain/ClienteTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/AutomovelRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/domain/LocacaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/domain/Locacao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/LocacaoRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="55" lean-forward="true" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/MarcaRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/domain/MarcaTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/ModeloRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/domain/ModeloTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>

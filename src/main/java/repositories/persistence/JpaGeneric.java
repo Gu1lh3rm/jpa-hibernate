@@ -1,5 +1,6 @@
 package repositories.persistence;
 
+import config.ConnectionFactory;
 import domain.common.EntidadeBase;
 
 import javax.persistence.EntityManager;

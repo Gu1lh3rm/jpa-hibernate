@@ -1,4 +1,4 @@
-package repositories.persistence;
+package config;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
