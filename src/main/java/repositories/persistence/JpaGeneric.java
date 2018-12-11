@@ -1,6 +1,5 @@
-package services.persistence;
+package repositories.persistence;
 
-import domain.common.Common;
 import domain.common.EntidadeBase;
 
 import javax.persistence.EntityManager;
