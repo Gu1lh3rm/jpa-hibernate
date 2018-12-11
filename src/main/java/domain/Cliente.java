@@ -1,9 +1,13 @@
 package domain;
 
+import com.fasterxml.jackson.annotation.JacksonInject;
 import domain.common.Common;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.OneToMany;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 public class Cliente extends Common {
@@ -18,6 +22,9 @@ public class Cliente extends Common {
 
     @Column(length = 13)
     private String fone;
+
+    @OneToMany(mappedBy = "cliente")
+    private List<Locacao> locacao = new ArrayList<>();
 
     public String getNome() {
         return nome;

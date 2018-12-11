@@ -6,6 +6,7 @@ import javax.persistence.*;
 
 @Entity
 public class Automovel extends Common {
+
     @Column(length = 4)
     private String ano;
 
@@ -15,6 +16,10 @@ public class Automovel extends Common {
     @ManyToOne
     @JoinColumn(name = "marca_id")
     private Marca marca;
+
+    @ManyToOne
+    @JoinColumn(name = "modelo_id")
+    private Modelo modelo;
 
     public String getAno() {
         return ano;
@@ -38,5 +43,13 @@ public class Automovel extends Common {
 
     public void setMarca(Marca marca) {
         this.marca = marca;
+    }
+
+    public Modelo getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(Modelo modelo) {
+        this.modelo = modelo;
     }
 }
