@@ -15,7 +15,16 @@ public class AutomovelTest {
         EntityManager em = emf.createEntityManager();
 
         EntityTransaction et = em.getTransaction();
+        et.begin();
 
+        Marca marca = new Marca();
+
+        marca.setDescricao("Ford");
+
+
+        em.persist(marca);
+
+        et.commit();
 
         et.begin();
 
@@ -23,6 +32,8 @@ public class AutomovelTest {
 
         automovel.setAno("2014");
         automovel.setChassi("1235646");
+        automovel.setMarca(marca);
+
 
         em.persist(automovel);
 

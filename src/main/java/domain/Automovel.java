@@ -2,8 +2,7 @@ package domain;
 
 import domain.common.Common;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
+import javax.persistence.*;
 
 @Entity
 public class Automovel extends Common {
@@ -12,6 +11,10 @@ public class Automovel extends Common {
 
     @Column(length = 17)
     private String chassi;
+
+    @ManyToOne
+    @JoinColumn(name = "marca_id")
+    private Marca marca;
 
     public String getAno() {
         return ano;
@@ -27,5 +30,13 @@ public class Automovel extends Common {
 
     public void setChassi(String chassi) {
         this.chassi = chassi;
+    }
+
+    public Marca getMarca() {
+        return marca;
+    }
+
+    public void setMarca(Marca marca) {
+        this.marca = marca;
     }
 }

@@ -19,7 +19,7 @@ public class MarcaTest{
 
         et.begin();
 
-        Marca  marca = new Marca();
+        Marca marca = new Marca();
 
         marca.setDescricao("Ford");
 

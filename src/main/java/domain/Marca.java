@@ -14,8 +14,8 @@ public class Marca extends Common {
 
     private String descricao;
 
-//    @OneToMany(mappedBy = "marca", cascade = CascadeType.ALL)
-//    private List<Automovel> automoveis = new ArrayList<>();
+    @OneToMany(mappedBy = "marca", cascade = CascadeType.ALL)
+    private List<Automovel> automoveis = new ArrayList<>();
 
     public String getDescricao() {
         return descricao;
@@ -23,5 +23,13 @@ public class Marca extends Common {
 
     public void setDescricao(String descricao) {
         this.descricao = descricao;
+    }
+
+    public List<Automovel> getAutomoveis() {
+        return automoveis;
+    }
+
+    public void setAutomoveis(List<Automovel> automoveis) {
+        this.automoveis = automoveis;
     }
 }
