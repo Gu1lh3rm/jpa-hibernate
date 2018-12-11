@@ -4,12 +4,12 @@
 <persistence-unit name="teste_hibernate_gui" transaction-type="RESOURCE_LOCAL">
     <provider>org.hibernate.ejb.HibernatePersistence</provider>
 
-    <class>model.common.Common</class>
-    <class>model.Marca</class>
-    <class>model.Automovel</class>
-    <class>model.Modelo</class>
-    <class>model.Cliente</class>
-    <class>model.Locacao</class>
+    <class>domain.common.Common</class>
+    <class>domain.Marca</class>
+    <class>domain.Automovel</class>
+    <class>domain.Modelo</class>
+    <class>domain.Cliente</class>
+    <class>domain.Locacao</class>
 
     <properties>
         <property name="hibernate.connection.driver_class" value="org.postgresql.Driver" />
