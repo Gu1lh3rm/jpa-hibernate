@@ -7,13 +7,14 @@ import javax.persistence.MappedSuperclass;
 import java.io.Serializable;
 
 @MappedSuperclass
-public abstract class Common implements Serializable {
+public abstract class Common implements Serializable, EntidadeBase {
     private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Override
     public Long getId() {
         return id;
     }
